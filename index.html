@@ -17,9 +17,72 @@
             </ul>
         </nav>
     </header>
-    <section>
+    
+    <section id="intro">
         <h1>Bienvenue sur mon site</h1>
-        <p>Je suis Lucas Galy, coach et sophrologue.</p>
+        <p>Je suis Lucas Galy, psychologue, sophrologue, et coach. Découvrez mes services et contactez-moi pour un accompagnement personnalisé.</p>
     </section>
+    
+    <section id="services">
+        <h2>Mes Services</h2>
+
+        <!-- Services -->
+        <div class="service-box">
+            <h3>Sophrologie</h3>
+            <p>Bienvenue dans mon espace de sophrologie... <span class="show-more">Lire plus</span></p>
+            <div class="more-info">
+                <p>Je suis sophrologue et vous accompagne pour trouver votre équilibre intérieur. Que vous souhaitiez gérer votre stress, améliorer votre sommeil, ou optimiser vos performances sportives, je suis là pour vous guider avec des outils simples et efficaces.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <h3>Psychologie</h3>
+            <p>Bienvenue dans mon espace de psychologie... <span class="show-more">Lire plus</span></p>
+            <div class="more-info">
+                <p>Je vous accompagne à surmonter vos doutes et difficultés dans un cadre bienveillant et confidentiel. Si vous traversez des périodes de stress, d'anxiété, ou de remise en question, je suis là pour vous écouter et vous aider à avancer à votre rythme.</p>
+            </div>
+        </div>
+
+        <div class="service-box">
+            <h3>Simracing</h3>
+            <p>Découvrez mes services en Simracing... <span class="show-more">Lire plus</span></p>
+            <div class="more-info">
+                <p>Je propose des sessions de coaching et d’accompagnement en Simracing pour améliorer vos performances, optimiser votre concentration et gérer votre stress avant une course importante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="POST">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Adresse Mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="objet">Objet</label>
+            <select id="objet" name="objet">
+                <option value="psychologie">Psychologie</option>
+                <option value="sophrologie">Sophrologie</option>
+                <option value="simracing">Simracing</option>
+                <option value="autres">Autres</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lucas Galy. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
