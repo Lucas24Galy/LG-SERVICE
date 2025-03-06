@@ -3,8 +3,10 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f8f9fa;
 }
 
+/* NAVIGATION */
 nav ul {
     list-style: none;
     padding: 0;
@@ -27,4 +29,68 @@ nav ul li a:hover {
     background-color: lightblue;
     border-radius: 5px;
     color: black;
+}
+
+/* FORMULAIRE */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+form input:hover, form select:hover, form textarea:hover {
+    border-color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* SERVICES */
+.service-box {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    background-color: #e3f2fd;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
 }
