@@ -1,26 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Galy - SimRacing</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaching Simracing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .coaching-option {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .coaching-option h3 {
+      font-size: 24px;
+      color: #34495e;
+    }
+
+    .coaching-option ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .coaching-option ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      padding: 12px 30px;
+      background-color: #e74c3c;
+      color: white;
+      font-size: 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #c0392b;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Santé</a></li>
-                <li><a href="simracing.html">SimRacing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>SimRacing</h1>
-        <p>Découvrez le coaching personnalisé pour améliorer vos performances en SimRacing.</p>
-        <a href="contact.html">En savoir plus</a>
-    </section>
+  <header>
+    <h1>Coaching Simracing Gratuit</h1>
+    <p>Perfectionne tes compétences en pilotage avec nos coachings individuels et collectifs</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="coaching-option">
+        <h2>Coaching Individuel</h2>
+        <p>Profite d’un coaching sur-mesure pour améliorer ta technique de pilotage. Nos experts t'accompagneront pour te permettre de progresser à ton rythme.</p>
+        <ul>
+          <li>Analyse de ta conduite avec des conseils personnalisés</li>
+          <li>Amélioration de ta gestion des trajectoires et de ta stratégie de course</li>
+          <li>Suivi et évaluation continue de ta progression</li>
+          <li>Exercices pratiques adaptés à ton niveau</li>
+        </ul>
+      </div>
+
+      <div class="coaching-option">
+        <h2>Coaching Collectif</h2>
+        <p>Rejoins nos sessions collectives pour apprendre aux côtés d’autres passionnés. Une atmosphère conviviale et motivante pour progresser ensemble.</p>
+        <ul>
+          <li>Apprentissage collaboratif avec des conseils en temps réel</li>
+          <li>Échanges d’astuces et débriefs de groupe</li>
+          <li>Suivi des stratégies de course en groupe</li>
+          <li>Partage d’expérience et soutien entre pilotes</li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <p>Les coachings sont entièrement gratuits ! Inscris-toi dès maintenant pour réserver ta place.</p>
+        <a href="#formulaire-inscription">S'inscrire au coaching</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
