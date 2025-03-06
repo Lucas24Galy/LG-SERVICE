@@ -22,10 +22,26 @@
         <p>Téléphone : 0620780119</p>
         <p>Email : lucasgaly.47510@gmail.com</p>
         <form action="mailto:lucasgaly.47510@gmail.com" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+            <label for="lastname">Nom :</label>
+            <input type="text" id="lastname" name="lastname" required>
+            
+            <label for="firstname">Prénom :</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="email">Adresse mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Objet :</label>
+            <select id="subject" name="subject">
+                <option value="psychologie">Psychologie</option>
+                <option value="sophrologie">Sophrologie</option>
+                <option value="simracing">SimRacing</option>
+                <option value="autres">Autres</option>
+            </select>
+
             <label for="message">Message :</label>
             <textarea id="message" name="message" required></textarea>
+
             <button type="submit">Envoyer</button>
         </form>
     </section>
