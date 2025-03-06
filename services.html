@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Galy - Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Mes services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Mes services</h1>
+        <p>Coaching, Sophrologie, Psychologie.</p>
+        <form action="mailto:lucasgaly.47510@gmail.com" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="service">Choisissez un service :</label>
+            <select id="service" name="service">
+                <option value="coaching">Coaching</option>
+                <option value="sophrologie">Sophrologie</option>
+                <option value="psychologie">Psychologie</option>
+            </select>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+</body>
+</html>
