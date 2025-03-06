@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Galy - Santé</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -19,22 +25,40 @@
     </header>
     <section>
         <h1>Services Santé</h1>
-        <h2>Sophrologie</h2>
-        <p>✨ Prenez un moment pour vous… Respirez, recentrez-vous, et trouvez votre équilibre intérieur.</p>
-        <p>Je suis Lucas Galy, sophrologue passionné et engagé à vous accompagner vers un mieux-être au quotidien.</p>
-        <ul>
-            <li>Gérer votre stress et vos émotions</li>
-            <li>Améliorer votre sommeil</li>
-            <li>Retrouver confiance en vous</li>
-            <li>Préparation aux examens et compétitions</li>
-            <li>Optimiser vos performances sportives et mentales</li>
-        </ul>
-        <p>📍 Séances individuelles ou collectives, en présentiel ou en visio.</p>
-        <a href="contact.html">Réserver une séance</a>
+        
+        <div class="service-box" onclick="toggleDetails('sophrologie-details')">
+            <h2>Sophrologie</h2>
+            <p>✨ Prenez un moment pour vous… Respirez, recentrez-vous, et trouvez votre équilibre intérieur.</p>
+            <div id="sophrologie-details" class="details">
+                <p>Je suis Lucas Galy, sophrologue passionné et engagé à vous accompagner vers un mieux-être.</p>
+                <ul>
+                    <li>Gérer votre stress et vos émotions</li>
+                    <li>Améliorer votre sommeil</li>
+                    <li>Retrouver confiance en vous</li>
+                    <li>Préparation aux examens et compétitions</li>
+                    <li>Optimiser vos performances sportives et mentales</li>
+                </ul>
+                <p>📍 Séances individuelles ou collectives, en présentiel ou en visio.</p>
+                <a href="contact.html">Réserver une séance</a>
+            </div>
+        </div>
 
-        <h2>Psychologie</h2>
-        <p>Accompagnement psychologique personnalisé selon vos besoins.</p>
-        <a href="contact.html">En savoir plus</a>
+        <div class="service-box" onclick="toggleDetails('psychologie-details')">
+            <h2>Psychologie</h2>
+            <p>✨ Un accompagnement bienveillant pour vous aider à avancer.</p>
+            <div id="psychologie-details" class="details">
+                <p>Je suis Lucas Galy, psychologue à votre écoute pour vous aider à surmonter vos doutes.</p>
+                <ul>
+                    <li>Stress, anxiété, angoisses</li>
+                    <li>Manque de confiance en soi</li>
+                    <li>Difficultés relationnelles ou professionnelles</li>
+                    <li>Gestion des émotions</li>
+                    <li>Préparation mentale</li>
+                </ul>
+                <p>📍 Séances en cabinet ou en visio, en toute confidentialité.</p>
+                <a href="contact.html">Prendre rendez-vous</a>
+            </div>
+        </div>
     </section>
 </body>
 </html>
